@@ -29,7 +29,9 @@ function Menu(){
 }
 
 function Footer(){
-    return <footer>{new Date().toLocaleDateString()} We're currently open</footer>
+    const hour = new Date().getHours();
+    console.log(hour);
+    return (<footer>{new Date().toLocaleDateString()} We're currently open</footer>)
 }
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
